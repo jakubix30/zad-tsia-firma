@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+	<head>
+	
+		<meta charset="utf-8">
+		<title>Firma</title>
+		<meta name="description" content="Opis zawartości strony dla wyszukiwarek">
+		<meta name="keywords" content="słowa, kluczowe, opisujące, zawartość">
+		<meta name="author" content="Jakub Płatkowski">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+    
+		<link rel="stylesheet" href="strona.css">
+    
+	</head>
+
+	<body>
+		<ul class="info">
+			<li><p>777-777-777</p></li>
+			<li><p>firma@firma.com</p></li>
+			<li class="right"><img src="ikon.png" alt="" height="45px"style="padding-right: 50px;"></li>
+		</ul>
+		<ul class="topnav">
+			<li><img src="logo.png" alt="" height="100px"></li>
+			<li class="right" style="padding-right: 30px;"><a href="#onas">o nas</a></li>
+			<li class="right"><a href="#oferta">oferta</a></li>
+			<li class="right"><a class="active" href="#stronaglowna">strona główna</a></li>
+		  </ul>
+
+
+
+		  <div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <img src="1.jpg" style="height: 600px; width: 100%;">
+			</div>
+			
+			<div class="mySlides fade">
+			  <img src="2.jpg" style="height: 600px;width: 100%;">
+			</div>
+			
+			<div class="mySlides fade">
+			  <img src="3.jpg" style="height: 600px;width: 100%;">
+			</div>
+			</div>
+
+			<br>
+			
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+			<script>
+				let slideIndex = 0;
+				showSlides();
+				
+				function showSlides() {
+				  let i;
+				  let slides = document.getElementsByClassName("mySlides");
+				  let dots = document.getElementsByClassName("dot");
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				  }
+				  slideIndex++;
+				  if (slideIndex > slides.length) {slideIndex = 1}    
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				  setTimeout(showSlides, 2000); // Change image every 2 seconds
+				}
+				</script>
+
+				<div id="oferta" class="oferta">
+					<div class="o1">
+						<img src="o1.jpg" alt=""style="max-width: 100%;">
+						<img src="pas.jpg" alt="" style="width: 100%; padding-top: 10px; height: 20px;" >
+						<h1 style="color: black;">Instalacja internetu</h1>
+						<p style="margin: 30px;">Precyzyjne i odpowiedzialne wykonanie prac instalacyjnych za pomocą certyfikowanych materiałów daje pewność bezpiecznego i wygodnego korzystania ze wszystkich urządzeń. Doświadczenie naszych pracowników i stosowanie najnowszych rozwiązań daje pewność, że instalacja będzie doskonale dopasowana do potrzeb korzystających z niej osób.</p>
+					</div>
+					<div class="o2">
+						<img src="o2.jpg" alt="" style="max-width: 100%;">
+						<img src="pas.jpg" alt="" style="width: 100%; padding-top: 10px; height: 20px;" >
+						<h1 style="color: black;">obsługa serwerów</h1>
+						<p style="margin: 30px;">Zarządzanie i administracja serwerami to opieka administracyjna nad infrastrukturą serwerową klienta, znajdującą się w chmurze lub dowolnej lokalizacji. Wiemy jak duża spoczywa na nas odpowiedzialność, dlatego gwarantujemy bezpieczeństwo oraz ciągłość pracy powierzonych nam serwerów.</p>
+					</div>
+					<div class="o2">
+						<img src="o3.jpg" alt=""style="max-width: 100%;">
+						<img src="pas.jpg" alt="" style="width: 100%; padding-top: 10px; height: 20px;" >
+						<h1 style="color: black;">zabezpieczenia</h1>
+						<p style="margin: 30px;">Cyberbezpieczeństwo systemów IT  jest  ważne dla każdej firmy, niezależnie od jej wielkości, a cyberprzestępcy nie biorą za cel swoich ataków tylko największych graczy. Również mniejsze firmy muszą podejmować działania nakierowane na wykrywanie zagrożeń  i wdrażać skuteczne rozwiązania z zakresu cyberbezpieczeństwa.</p>
+					</div>
+				</div>
+
+				<div id="onas" class="onas">
+					<p style="visibility: hidden;">wwwwwwwwww</p>
+					<h1 style="text-align: center; color: white;">
+						O nas
+					</h1>					
+					<img src="pas.jpg" alt="" style="margin-right: 50%; margin-left: 46.8%;">
+					<div class="naj">
+					<h1 >
+						Najlepsza firma na rynku
+					</h1>
+					</div>
+					<div class="pkol">
+					<h2 >lata doświadczenia</h2>
+					<p style="color: #797979;">duzo lat doswiadczen sprawiła ze jestesmy jednymi z najbardziej doswiadczonych firm </p>
+					<h2 >popuralność</h2>
+					<p style="color: #797979;"> jesteśmy jedną z napopouralniejsza firm z naszych usług korzysta wiele innych firm</p>
+					</div>
+					<div class="dkol">
+					<h2 >projektowanie</h2>
+					<p style="color: #797979;">nasza firma ma najlepszy na rynku system projektowania </p>
+
+					<h2 >bezpieczeństwo informacji</h2>
+					<p style="color: #797979;">informacje naszych kilentów mogą być zawsze bezpieczne dzięki naszym zabezpieczeniom</p>
+					</div>
+					</div>
+				</div>
+				<p style="visibility: hidden;">wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</p>
+
+				<div class="infodol">
+					<img src="logo.png" alt="" >
+					<p style="margin-left: 250px; color: #797979; font-size: 20px; text-align: center;">	tel: 777-777-777<br>mail: firma@firma.com<br>adres: lezajsk 37-300</p>
+				</div>
+	</body>
+	
+</html>
